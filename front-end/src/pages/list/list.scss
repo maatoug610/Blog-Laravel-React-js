@@ -1,0 +1,116 @@
+.list{
+    display: flex;
+    width: 100%;
+    .listContainer{
+        flex: 6;
+
+        .datatable{
+            height: 600px;
+            padding: 20px;
+
+            .datatableTitle{
+                width: 100%;
+                color: gray;
+                font-size: 25px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .link{
+                    text-decoration: none;
+                    color: green;
+                    font-size: 16px;
+                    font-weight: 500;
+                    border: 1px solid green;
+                    padding: 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                        
+                    }
+                }
+            }
+
+            .cellWithImg{
+                display: flex;
+                align-items: center;
+
+                .cellImg{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin: 10px;
+                }
+            }
+
+            .cellWithStatus{
+                padding: 5px;
+                border-radius: 5px;
+
+                
+                    background-color: rgba(0,128,0,0.05);
+                    color: green;
+                
+            }
+
+            .cellAction{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+              
+                .viewButton{
+                    font-weight: bold;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    color: rgb(0, 107, 139);
+                    border: 1px dotted rgba(0, 88, 139, 0.596);
+                    
+                    cursor: pointer;
+
+                    &:hover{
+                        border-style: solid;
+                        background-color: rgb(0, 107, 139);
+                        color: white;
+                    }
+                }
+
+                
+                .deleteButton{
+                    font-weight: bold;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    color: crimson;
+                    border: 1px dotted rgba(220,20,60,0.6);
+                    cursor: pointer;
+
+                    &:hover{
+                       border-style: solid;
+                       background-color: crimson;
+                       color: white;
+                    }
+                }
+
+
+                .editButton{
+                    font-weight: bold;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    color: #f38831;
+                    border: 1px solid #FF9E4C;
+                    cursor: pointer;
+
+                    &:hover{
+                       border-style: solid;
+                       background-color: #f38831;
+                       color: white;
+                    }
+                }
+            }
+        }
+    }
+}
